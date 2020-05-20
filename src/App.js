@@ -1,9 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './doc/01_hello_world'
-import './doc/02_introducing_jsx'
-import './doc/03_rendering_elements'
+import './react-doc-main-concepts/00_all'
 function App() {
   return (
     <div className="App">
