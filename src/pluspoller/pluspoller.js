@@ -31,9 +31,10 @@ function PlusPoller(props){
 // poll:
 const poll =
 { question: 'Please choose an icecream flavor!',
-    options:[{name: "vanilla", label: "Vanilla", checked: false},
+    options:[{name: "vanilla", label: "Rum-Raisin", checked: false},
+             {name: "vanilla", label: "Vanilla", checked: false},
              {name: "chocolate", label: "Chocolate", checked: false},
              {name: "pistachio", label: "Pistachio", checked: false}
     ]}
 
-ReactDOM.render(<PlusPoller poll={poll}/>,document.getElementById('pluspoller'))
+ReactDOM.render(<PlusPoller poll={poll}/>,document.getElementById('pluspoll'))
