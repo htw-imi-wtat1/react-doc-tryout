@@ -11,4 +11,4 @@ function tick() {
     ReactDOM.render(element, document.getElementById('03_rendering_elements'));
 }
 
-setInterval(tick, 1000);
+setInterval(tick, 2*1000);

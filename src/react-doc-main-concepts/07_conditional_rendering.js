@@ -67,5 +67,7 @@ class LoginControl extends React.Component {
         );
     }
 }
-ReactDOM.render(<div> <Greeting isLoggedIn={true} /> <Greeting isLoggedIn={false} />
+ReactDOM.render(<div>
+    <p>Conditional and passing callback as a parameter.</p>
+    <Greeting isLoggedIn={true} /> <Greeting isLoggedIn={false} />
 <hr/><LoginControl/></div>,document.getElementById('07_conditional_rendering'))

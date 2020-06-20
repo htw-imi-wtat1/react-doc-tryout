@@ -31,7 +31,7 @@ function PlusPoller(props){
 // poll:
 const poll =
 { question: 'Please choose an icecream flavor!',
-    options:[{name: "vanilla", label: "Rum-Raisin", checked: false},
+    options:[{name: "rumraisin", label: "Rum-Raisin", checked: false},
              {name: "vanilla", label: "Vanilla", checked: false},
              {name: "chocolate", label: "Chocolate", checked: false},
              {name: "pistachio", label: "Pistachio", checked: false}

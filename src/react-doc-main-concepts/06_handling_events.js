@@ -51,29 +51,33 @@ function Table(props){
 }
 class Table2 extends React.Component{
     constructor(props) {
-    super(props);
-    this.state = {isToggleOn: true};
-
-    // This binding is necessary to make `this` work in the callback
-    this.deleteRow = this.deleteRow.bind(this);
-}
+        super(props);
+        this.state = {isToggleOn: true};
+        this.numbers = [1, 2, 3, 4, 5, 6]
+        // This binding is necessary to make `this` work in the callback
+        this.deleteRow = this.deleteRow.bind(this);
+    }
     deleteRow(id,e){
+        this.numbers = this.numbers.slice(id,1)
         console.log("deleteRow: "+id)
+        this.render()
     }
     render (){
-        const numbers = [1, 2, 3, 4, 5, 6]
-        return(
+        return(<div>
+            <p>{this.numbers}</p>
             <table><tbody>{
-                numbers.map((id) => {
+                this.numbers.map((id) => {
                     return (<tr key={id.toString()}>
                         <td>Line. {id}</td>
                         <td><button onClick={this.deleteRow.bind(this, id)}>Delete Row</button></td>
                     </tr>)
                 })
-            }</tbody></table>)
+            }</tbody></table></div>)
     }
 }
 
     ReactDOM.render(
         <div><Button /><Link/><Toggle/><Table/><Table2/></div>,
     document.getElementById('06_handling_events'));
+
+
